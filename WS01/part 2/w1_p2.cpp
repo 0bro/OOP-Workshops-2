@@ -21,16 +21,19 @@ codes
 // TODO: write the prototype for the main function
 //         to accept command line arguments
 
+int main(int argc, char *argv[])
 {
 	std::cout << "Command Line:\n";
 	// TODO: print the command line here, in the format
+	for (int i = 0; i < argc; i++)
+	{
+		std::cout << i + 1 << ": " << argv[i] << std::endl;
+	}
 	// 1: first argument
 	// 2: second argument
 	// 3: third argument
 
-
 	std::cout << std::endl;
-
 
 	// the archive can store maximum 10 events
 	sdds::Event archive[10];
@@ -39,7 +42,7 @@ codes
 
 	sdds::Event currentEvent;
 
-	const size_t secInDay = 60u * 60u * 24u;// day has 86400 seconds
+	const size_t secInDay = 60u * 60u * 24u; // day has 86400 seconds
 
 	for (auto day = 1; day < argc; ++day)
 	{

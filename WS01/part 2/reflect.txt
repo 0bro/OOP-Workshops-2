@@ -1,0 +1,21 @@
+// Muhammad Ibrahi Muhammad Yusoof
+// 164366189
+// imuhammad-yusoof@myseneca.ca
+// May 29 2021
+
+In Workshop 1, I was able to experiment and learn how external and internal linakges can connect parts of 
+my program for better fluidity. Learning where to intialize and declare my external linkage was probably 
+the most difficult part, which goes to show how simple the concept can be. Internal Linkages connect my 
+objects between eachother, allowing for them to have access to a single variable instance, this allowed me
+to increment my counter everytime I ran my display function. The external linkage, allowed for both my Event class
+and other modules to have access to the same information, this helped me avoid having to pass an instance of g_sysClock
+as a parameter, instead all modules had the same access.
+
+Static variables are variables that are linked to the same address in memory between multiple instances of a class.
+This allows for each instance of the class to have the same access to data, without having to pass it around as a parameter, 
+aswell as only allowing instances of it's class to modify and have access to it. Making it more safe.
+
+In order to upgrade my event class, I allowed for the desc variable to be dynamically allocated to any size of char array.
+Since I made this change, I had to add both a copy constructor and assignment operator. In order to properly
+allocate space for the data that was being copied/assigned in the archiving proccess.
+
