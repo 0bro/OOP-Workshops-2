@@ -1,0 +1,15 @@
+// Name: Muhammad Ibrahi Muhammad Yusoof
+// Email: imuhammad-yusoof@myseneca.ca
+// SEQ: 164366189
+// Date: June 13 2021
+
+
+Throughout workshop 3 I found alot of difficulty trying to make sense of the levels of inheritance and polymorphisim, Every object interacted with every object without knowing about other objects, this was probably the biggest barrier I had. I understood why I needed to default value to initial, at 
+
+PairSummable(const K& key, const V& value = initial)
+
+Since there may be a time where value may not be passed, we can default it to what iniitial is. That time was in Summation, where we set the default filter but not the a default value, as we wouldn't know if value was an int or a string, it'll simply default to the correct version.
+
+I also understood why we needed to specialize, the operator+=(). As there are different methods when adding numerals vs strings. With a number type, I can simply use the + opperand, but with strings, I would need to add a comma to make it more visually readable.
+
+We were required to define the class variable outside of the class definition, since static variables must be defined once and only once outside of the class, to be used inside the class. Since there wasn't a cpp file to define the static varible in, we ended up defining them outside.

@@ -1,0 +1,3 @@
+g++ -Wall -std=c++17 -g -o runMe w3_p2.cpp 
+./runMe products.txt sales.txt
+

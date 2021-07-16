@@ -1,0 +1,2 @@
+g++ -Wall -std=c++17 -g -o ws w2_p2.cpp TimedEvents.cpp StringSet.cpp 
+./ws gutenberg_shakespeare

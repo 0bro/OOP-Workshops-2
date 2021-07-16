@@ -16,7 +16,7 @@
 
 using namespace sdds;
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
 	std::cout << "Command Line:\n";
 	std::cout << "--------------------------\n";
@@ -42,13 +42,12 @@ int main(int argc, char** argv)
 		t.stopClock();
 		t.addEvent("  0-arg Constructor");
 		std::cout << "  0-arg Constructor - a.size = "
-			<< std::setw(7) << a.size() << " strings -> ";
+				  << std::setw(7) << a.size() << " strings -> ";
 		std::cout << std::setw(20) << "(a) String     1: [" << a[  0] << "]\n";
 		std::cout << std::setw(70) << "(a) String   100: [" << a[ 99] << "]\n";
 		std::cout << std::setw(70) << "(a) String  1000: [" << a[999] << "]\n";
 		std::cout << std::setw(70) << "(a) String  last: [" << a[a.size() - 1] << "]\n";
 		std::cout << std::setw(70) << "(a) String last+: [" << a[a.size()] << "]\n\n";
-
 
 		t.startClock();
 		StringSet b(argv[1]);
@@ -62,7 +61,6 @@ int main(int argc, char** argv)
 		std::cout << std::setw(70) << "(b) String  last: [" << b[b.size() - 1] << "]\n";
 		std::cout << std::setw(70) << "(b) String last+: [" << b[b.size()] << "]\n\n";
 
-
 		t.startClock();
 		StringSet c{ b };
 		t.stopClock();
@@ -75,7 +73,6 @@ int main(int argc, char** argv)
 		std::cout << std::setw(70) << "(c) String  last: [" << c[c.size() - 1] << "]\n";
 		std::cout << std::setw(70) << "(c) String last+: [" << c[c.size()] << "]\n\n";
 
-
 		t.startClock();
 		a = b;
 		t.stopClock();
@@ -87,7 +84,6 @@ int main(int argc, char** argv)
 		std::cout << std::setw(70) << "(a) String  1000: [" << a[999] << "]\n";
 		std::cout << std::setw(70) << "(a) String  last: [" << a[a.size() - 1] << "]\n";
 		std::cout << std::setw(70) << "(a) String last+: [" << a[a.size()] << "]\n\n";
-
 
 		t.startClock();
 	}
